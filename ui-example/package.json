@@ -1,0 +1,43 @@
+{
+  "name": "ui-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "0x.js": "^2.0.0",
+    "@0x/connect": "^3.0.10",
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.17",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "axios": "^0.18.0",
+    "http-proxy-middleware": "^0.19.1",
+    "loglevel": "^1.6.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "start": "PORT=3001 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/loglevel": "^1.5.3",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^3.6.0"
+  }
+}
