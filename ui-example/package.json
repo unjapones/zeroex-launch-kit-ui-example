@@ -5,16 +5,22 @@
   "dependencies": {
     "0x.js": "^2.0.0",
     "@0x/connect": "^3.0.10",
+    "@0x/order-utils": "^3.0.7",
+    "@0x/subproviders": "^2.1.8",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.17",
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
     "axios": "^0.18.0",
+    "bloomer": "^0.6.5",
+    "bn.js": "^4.11.8",
+    "bulma": "^0.7.2",
     "http-proxy-middleware": "^0.19.1",
     "loglevel": "^1.6.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
+    "react-web3-provider": "^1.1.1",
     "typescript": "^3.2.2"
   },
   "scripts": {
