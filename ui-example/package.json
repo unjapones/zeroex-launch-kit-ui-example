@@ -12,6 +12,7 @@
     "@types/react": "^16.7.17",
     "@types/react-dom": "^16.0.11",
     "axios": "^0.18.0",
+    "bignumber.js": "~4.1.0",
     "bloomer": "^0.6.5",
     "bn.js": "^4.11.8",
     "bulma": "^0.7.2",
