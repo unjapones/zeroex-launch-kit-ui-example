@@ -1,0 +1,3 @@
+[submodule "0x-launch-kit"]
+	path = 0x-launch-kit
+	url = https://github.com/0xProject/0x-launch-kit.git

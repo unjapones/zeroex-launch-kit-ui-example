@@ -4,10 +4,10 @@
   "description": "0x-launch-kit ui-example project",
   "main": "index.js",
   "scripts": {
-    "preinstall": "git clone https://github.com/0xProject/0x-launch-kit.git && cd 0x-launch-kit && npm install && yarn build:ts",
-    "postinstall": "cd ui-example && npm install",
+    "preinstall": "git submodule update && cd 0x-launch-kit && yarn && yarn build:ts",
+    "postinstall": "cd ui-example && yarn",
     "dev": "run-p launch-kit create-react-app",
-    "create-react-app": "cd ui-example && npm start",
+    "create-react-app": "cd ui-example && yarn start",
     "launch-kit": "cd 0x-launch-kit && yarn start:ts"
   },
   "author": "jlshirai@gmail.com",
