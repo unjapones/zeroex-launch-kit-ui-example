@@ -3,7 +3,7 @@ import * as log from 'loglevel'
 import { HttpClient } from '@0x/connect';
 import { AssetPairsResponse, AssetPairsItem, ERC20AssetData } from '@0x/types';
 import { assetDataUtils } from '0x.js'
-import getRelayerClient from '../lib/getRelayerClient'
+import { getRelayerClient } from '../lib/relayer_client'
 import { ERC20TokenNames } from '../common/constants'
 
 const logger = log.getLogger('AssetPairs');
@@ -73,4 +73,4 @@ class AssetPairs extends React.Component {
   }
 }
 
-export default AssetPairs
+export { AssetPairs }

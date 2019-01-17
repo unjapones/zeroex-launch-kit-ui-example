@@ -6,4 +6,4 @@ const getRelayerClient = (url: string = DEFAULT_RELAYER_URL) : HttpClient => {
   return new HttpClient(url)
 }
 
-export default getRelayerClient
+export { getRelayerClient }

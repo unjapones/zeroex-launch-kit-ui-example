@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import AssetPairs from './containers/AssetPairs'
-import './App.css'
+import { AssetPairs } from './asset_pairs'
 
 class App extends Component {
   constructor(props: any) {
@@ -21,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App
+export { App }
