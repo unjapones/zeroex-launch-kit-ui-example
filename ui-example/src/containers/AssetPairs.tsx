@@ -1,7 +1,7 @@
 import React from 'react'
 import * as log from 'loglevel'
 import { HttpClient } from '@0x/connect';
-import { AssetPairsResponse, AssetPairsItem, AssetData } from '@0x/types';
+import { AssetPairsResponse, AssetPairsItem, ERC20AssetData } from '@0x/types';
 import { assetDataUtils } from '0x.js'
 import getRelayerClient from '../lib/getRelayerClient'
 import { ERC20TokenNames } from '../common/constants'
@@ -56,8 +56,10 @@ class AssetPairs extends React.Component {
 
   private mapAssetPairToListItems(assetPairs: AssetPairsItem[]) {
     return assetPairs.map((ap: AssetPairsItem) => {
-      const tokenAddressA: string = assetDataUtils.decodeAssetDataOrThrow(ap.assetDataA.assetData).tokenAddress
-      const tokenAddressB: string = assetDataUtils.decodeAssetDataOrThrow(ap.assetDataB.assetData).tokenAddress
+      const tokenDataA: ERC20AssetData = assetDataUtils.decodeAssetDataOrThrow(ap.assetDataA.assetData) as ERC20AssetData
+      const tokenAddressA: string = tokenDataA.tokenAddress
+      const tokenDataB: ERC20AssetData = assetDataUtils.decodeAssetDataOrThrow(ap.assetDataB.assetData) as ERC20AssetData
+      const tokenAddressB: string = tokenDataB.tokenAddress
       // @TODO: names are hardcoded in 'common/constants.ts'. We probably could get them
       // by iteracting with the blockchain
       const tokenNameA: string = ERC20TokenNames[tokenAddressA]
